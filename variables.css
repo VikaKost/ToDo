@@ -1,0 +1,14 @@
+:root {
+    --gray: #e8e9ee;
+    --grayLight: #f4f4f7;
+    --fontGray: #a6a8b2;
+    --white: #ffffff;
+    --purple: #a25fce;
+    --green: #69c480;
+    --font: ' Nunito', sans-serif;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(fonts/Manrope.ttf);
+}

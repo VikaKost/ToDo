@@ -1,0 +1,302 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    font-family: var(--font);
+    background: var(--gray);
+}
+
+header{
+    background: var(--grayLight);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#formMain{
+    height: 95%;
+
+}
+#reg-form{
+    height: 95%;
+    display: none;
+}
+
+#login-form{
+    height: 95%;
+    display: none;
+}
+
+.lgBtn{
+    background: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    padding: 1.5rem 1rem;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.lgBtn:focus, loginBtn:focus{
+    outline: none;
+}
+.contentBlock{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.labelReg{
+    margin: 0;
+    margin-top:4rem;
+    font-family: Manrope;
+    color: var(--fontGray);
+}
+#regForm{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    padding: 3rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    padding: 3rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 8rem;
+    border-bottom-left-radius: 8rem;
+}
+
+.loginLink{
+    color: var(--purple);
+    font-size: 0.8rem;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.loginInput{
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    border: none;
+    background: var(--gray);
+}
+
+.loginInput:focus{
+    outline: none;
+}
+
+.loginBtn{
+    background: var(--purple);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    padding: 2rem 0.3rem;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.loginImg{
+    height: 4rem;
+    width: 4rem;
+    margin: 0 auto;
+    margin-bottom: -1.2rem;
+    z-index: 100;
+}
+
+.footer{
+    height:5%;
+    color: var(--fontGray);
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.logoImg{
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+.logoHead, .userHead{
+    display: flex;
+    align-items: center;
+}
+
+.label{
+    margin: 0;
+    font-family: Manrope;
+    color: var(--fontGray);
+}
+
+#name{
+    font-weight: bold;
+    margin-right:1rem;
+}
+
+#loginButton{
+    background: #f4bf4a;
+    color: var(--white);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.3rem 0.5rem;
+}
+
+#loginBtn:focus{
+    outline: none;
+}
+
+main{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#searchBtn{
+    margin-left: -0.4rem;
+    color: var(--white);
+    border: none;
+    background: var(--purple);
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    padding: 0.5rem 0.7rem;
+}
+
+#searchBtn:focus{
+    outline: none;
+}
+
+#textFil{
+    padding: 0.5rem;
+    border: none;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+#textFil:focus{
+    outline: none;
+}
+
+.filterLabel, .title{
+    font-weight: bold;
+}
+
+#dateFil{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.7rem;
+}
+
+#dateFil:focus{
+    outline: none;
+}
+
+.filBlock{
+    margin-bottom: 1rem;
+}
+
+#author{
+    margin-right: 1rem;
+}
+
+#addInput{
+    padding: 0.6rem;
+    border-radius: 0.7rem;
+    border: none;
+}
+
+#addTask{
+    background: var(--green);
+    border: none;
+    padding: 0.3rem 1.2rem;
+    font-size: 3rem;
+    color: var(--white);
+    border-radius: 50%;
+    margin-left: -1rem;
+}
+
+#addTask:focus, #addInput:focus {
+    outline: none;
+}
+
+.addTask{
+    display: flex;
+    align-items: center;
+}
+
+.taskWrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom:1rem;
+}
+
+.task{
+    display: flex;
+    background: var(--white);
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    align-items: center;
+}
+
+.check{
+    background: var(--gray);
+    padding: 0.2rem 0.3rem;
+    border-radius: 1rem;
+    color: var(--green);
+    margin-right: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+.taskWrapper:hover .dateBox{
+display: block;
+}
+
+.taskWrapper:hover .editBox{
+    display: flex;
+}
+
+.editBox{
+    display: none;
+    font-size: 1.2rem;
+    color: var(--fontGray);
+}
+
+.dateBox{
+    display: none;
+    color: var(--fontGray);
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+
+}
+
+.mark{
+    display: none;
+}
+
+.check:hover .mark{
+    display: block;
+}
+
+@media screen and (max-device-width: 770px) {
+    main{
+        display:block;
+    }
+    .filterLabel, #dateFil{
+        display: none;
+    }
+
+    #textFil{
+        width: 75%;
+    }
+}

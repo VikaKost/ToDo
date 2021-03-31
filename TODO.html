@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="variables.css">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>ToDo</title>
+</head>
+<body>
+<div id="formMain">
+    <header>
+        <div class="logoHead">
+            <img src="logo.png" class="logoImg">
+            <h1 class="label">Туду</h1>
+        </div>
+        <div class="userHead">
+            <span id="name"></span>
+            <button id="loginButton">Выход</button>
+        </div>
+    </header>
+    <main>
+            <form id="filter" onsubmit="event.preventDefault(); controller.filter(event); reset()">
+                <div class="filBlock" >
+                <input id="textFil" type="text" placeholder="Поиск задачи...">
+                <button type = "submit" id="searchBtn">Найти</button>
+                </div>
+                <span class="filterLabel">Фильтр</span>
+                <input id="dateFil" type="date" placeholder="Дата создания">
+
+            </form>
+            <div id="tasks">
+                <span class="title">Мои задачи</span>
+                <div class="tasksBlock" id="compl"></div>
+                <form class="addTask" onsubmit="event.preventDefault(); controller.addTask(event); reset()">
+                    <input id="addInput" type="text" placeholder="Введите задачу">
+                    <button id="addTask" type = "submit" value="">+</button>
+                </form>
+            </div>
+            <div id="finished">
+                <span class="title">Я сделал</span>
+                <div class="tasksBlock" id="uncompl"></div>
+            </div>
+    </main>
+</div>
+
+<div id="reg-form">
+    <div class="contentBlock">
+        <h1 class=" labelReg">Туду</h1>
+        <img src="logo.png" class=" loginImg">
+        <form id="regForm" onsubmit="event.preventDefault(); controller.registration(event); reset()">
+            <span id="reg" class="loginLink">Авторизация</span>
+            <input id="login" class="loginInput" type="text" placeholder="Введите логин">
+            <input id="pass" class="loginInput" type="text" placeholder="Введите пароль">
+            <input id="repass" class="loginInput" type="text" placeholder="Повторите пароль">
+            <button class="loginBtn"  type = "submit">Регистрация</button>
+        </form>
+    </div>
+</div>
+
+<div id="login-form">
+    <div class="contentBlock">
+        <h1 class=" labelReg">Туду</h1>
+        <img src="logo.png" class=" loginImg">
+        <form id="loginForm" onsubmit="event.preventDefault(); controller.login(event); reset()">
+            <span id="regL" class="loginLink">Регистрация</span>
+            <input id="loginL" class="loginInput" type="text" placeholder="Введите логин">
+            <input id="passL" class="loginInput" type="text" placeholder="Введите пароль">
+            <button class="lgBtn" type = "submit">Войти</button>
+        </form>
+    </div>
+</div>
+
+
+    <footer class="footer">
+                <span id="author">Viktoria Kostyukevich</span>
+                <span>viktoria16.kos@mail.ru</span>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
